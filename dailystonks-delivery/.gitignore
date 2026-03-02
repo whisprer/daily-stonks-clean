@@ -1,0 +1,28 @@
+
+# secrets / local config
+.env
+.env.*
+*_secret*
+*_secrets*
+
+# local/runtime
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+_backups/
+# virtualenvs
+.venv/
+venv/
+
+# python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# env files
+.env
+.env.*

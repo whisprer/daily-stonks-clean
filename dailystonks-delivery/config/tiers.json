@@ -1,0 +1,38 @@
+{
+  "tiers": {
+    "FREE": {
+      "can_customize": false,
+      "max_cards": 6,
+      "allowed_cards": [
+        "sp500_summary",
+        "top_movers",
+        "heatmap"
+      ]
+    },
+    "BASIC": {
+      "can_customize": false,
+      "max_cards": 8,
+      "allowed_cards": [
+        "sp500_summary",
+        "top_movers",
+        "heatmap",
+        "sector_perf",
+        "news_brief"
+      ]
+    },
+    "PRO": {
+      "can_customize": true,
+      "max_cards": 12,
+      "allowed_cards": [
+        "*"
+      ]
+    },
+    "BLACK": {
+      "can_customize": true,
+      "max_cards": 25,
+      "allowed_cards": [
+        "*"
+      ]
+    }
+  }
+}
