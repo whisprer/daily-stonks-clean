@@ -200,6 +200,7 @@ def integration_client(monkeypatch, postgres_db_url, admin_token):
     _ensure_engine_on_syspath()
 
     # Set env BEFORE importing app modules
+    monkeypatch.setenv("MPLBACKEND", "Agg")
     monkeypatch.setenv("DS_INTEGRATION_DB", "1")
     monkeypatch.setenv("ADMIN_TOKEN", admin_token)
     monkeypatch.setenv("DATABASE_URL", postgres_db_url)

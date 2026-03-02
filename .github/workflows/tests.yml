@@ -54,6 +54,7 @@ jobs:
       run:
         working-directory: dailystonks-delivery
     env:
+      MPLBACKEND: Agg
       DAILYSTONKS_ENGINE: ${{ github.workspace }}/dailystonks/engine
     steps:
       - uses: actions/checkout@v4
