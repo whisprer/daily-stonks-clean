@@ -5,6 +5,18 @@ on:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
+    inputs:
+      run_integration:
+        description: "Run integration tests (Docker Postgres)"
+        type: boolean
+        default: false
+  schedule:
+    # GitHub schedules are UTC. This is 03:17 UTC daily (adjust as you like).
+    - cron: "17 3 * * *"
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   unit:
@@ -34,9 +46,10 @@ jobs:
         run: python -m pytest -q
 
   integration:
-    # Keep integration opt-in (manual button) so PRs stay fast.
-    if: github.event_name == 'workflow_dispatch'
+    # Run nightly OR when manually requested via checkbox
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.run_integration == 'true')
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: dailystonks-delivery
