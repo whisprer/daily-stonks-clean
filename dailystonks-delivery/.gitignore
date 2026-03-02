@@ -26,3 +26,5 @@ __pycache__/
 # env files
 .env
 .env.*
+
+dailystonks/engine/*.egg-info/

@@ -1,0 +1,104 @@
+name: "Bug report"
+description: "Report a reproducible problem in daily-stonks-clean (engine or delivery)"
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! Please include as much detail as you can.
+        If this is a security issue, **do not** file it here — use SECURITY.md.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Where does the bug occur?
+      options:
+        - dailystonks-delivery (API/queue/runner)
+        - dailystonks/engine (report generation/config)
+        - CI (GitHub Actions/tests)
+        - Unsure / multiple
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, in one or two sentences?
+      placeholder: "Example: Integration tests fail because engine config path is not detected on Windows."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide exact commands and inputs. If it’s intermittent, say how often it happens.
+      placeholder: |
+        1. cd dailystonks-delivery
+        2. python -m pytest -q -m integration tests/integration -rs
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: "Example: Test should pass and persist a DeliveryRun row."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: "Example: RuntimeError: tiers.yaml not found..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      description: Paste the full traceback or relevant logs.
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: Repo version / commit
+      description: Paste the commit SHA (or tag) you’re on.
+      placeholder: "git rev-parse HEAD"
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python version, Docker version (if integration), and anything relevant.
+      placeholder: |
+        OS: Windows 11 / Ubuntu 22.04 / macOS ...
+        Python: 3.10.x
+        Docker: 26.x (if used)
+        Shell: PowerShell / bash
+        Install method: venv + pip
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks
+      options:
+        - label: I searched existing issues and didn’t find a duplicate.
+          required: true
+        - label: I can reproduce this on the latest `main` (or I explain why I can't).
+          required: false
+        - label: I ran unit tests (`python -m pytest -q`) and included results if relevant.
+          required: false
+        - label: If relevant, I ran integration tests (`python -m pytest -q -m integration tests/integration -rs`) and included results.
+          required: false

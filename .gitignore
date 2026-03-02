@@ -24,3 +24,5 @@ Thumbs.db
 # Engine runtime outputs/caches
 dailystonks/engine/.cache/
 dailystonks/engine/out/
+
+dailystonks/engine/*.egg-info/

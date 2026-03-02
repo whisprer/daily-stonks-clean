@@ -14,5 +14,13 @@ dependencies = [
   "pyyaml",
 ]
 
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dailystonks*"]
+exclude = ["config*"]
+
 [project.scripts]
 dailystonks-report = "dailystonks.__main__:main"
