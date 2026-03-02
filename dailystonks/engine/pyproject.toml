@@ -1,0 +1,18 @@
+[project]
+name = "dailystonks-modular"
+version = "0.1.0"
+description = "Modular card+slots report engine for DailyStonks"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "scikit-learn",
+  "statsmodels",
+  "scipy",
+  "yfinance",
+  "pyyaml",
+]
+
+[project.scripts]
+dailystonks-report = "dailystonks.__main__:main"

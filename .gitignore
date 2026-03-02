@@ -1,0 +1,26 @@
+# Python venvs
+.venv/
+venv/
+dailystonks-delivery/.venv/
+dailystonks-delivery/venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Engine runtime outputs/caches
+dailystonks/engine/.cache/
+dailystonks/engine/out/
