@@ -1,3 +1,17 @@
+[README.md]
+
+<p align="center">
+  <a href="https://github.com/whisprer/daily-stonks-clean">
+    <img src="https://img.shields.io/github/stars/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/whisprer/daily-stonks-clean/issues">
+    <img src="https://img.shields.io/github/issues/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub issues" />
+  </a>
+  <a href="https://github.com/whisprer/daily-stonks-clean/fork">
+    <img src="https://img.shields.io/github/forks/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub forks" />
+  </a>
+</p>
+
 # daily-stonks-clean
 
 [![tests](https://github.com/whisprer/daily-stonks-clean/actions/workflows/tests.yml/badge.svg)](https://github.com/whisprer/daily-stonks-clean/actions/workflows/tests.yml)
