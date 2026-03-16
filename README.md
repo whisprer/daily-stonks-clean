@@ -1,18 +1,33 @@
-[README.md]
+<!-- repo-convergence:readme-header:start -->
+<!-- repo-convergence:language=FILL_ME -->
+# daily-stonks-clean
 
 <p align="center">
-  <a href="https://github.com/whisprer/daily-stonks-clean">
-    <img src="https://img.shields.io/github/stars/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub stars" />
+  <a href="https://github.com/whisprer/daily-stonks-clean/releases">
+    <img src="https://img.shields.io/github/v/release/whisprer/daily-stonks-clean?color=4CAF50&label=release" alt="Release Version">
   </a>
-  <a href="https://github.com/whisprer/daily-stonks-clean/issues">
-    <img src="https://img.shields.io/github/issues/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub issues" />
+  <a href="https://github.com/whisprer/daily-stonks-clean/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-Hybrid-green.svg" alt="License">
   </a>
-  <a href="https://github.com/whisprer/daily-stonks-clean/fork">
-    <img src="https://img.shields.io/github/forks/whisprer/daily-stonks-clean?style=for-the-badge" alt="GitHub forks" />
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg" alt="Platform">
+  <a href="https://github.com/whisprer/daily-stonks-clean/actions/workflows/tests.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/whisprer/daily-stonks-clean/tests.yml?label=build" alt="Build Status">
   </a>
 </p>
 
-# daily-stonks-clean
+[![GitHub](https://img.shields.io/badge/GitHub-whisprer%2Fdaily-stonks-clean-blue?logo=github&style=flat-square)](https://github.com/whisprer/daily-stonks-clean)
+![Commits](https://img.shields.io/github/commit-activity/m/whisprer/daily-stonks-clean?label=commits)
+![Last Commit](https://img.shields.io/github/last-commit/whisprer/daily-stonks-clean)
+![Issues](https://img.shields.io/github/issues/whisprer/daily-stonks-clean)
+[![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)](https://github.com/whisprer/daily-stonks-clean)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/language-FILL_ME-blue.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Alpha%20Release-orange?style=flat-square)](#)
+
+<p align="center">
+  <img src="/assets/daily-stonks-clean-banner.png" width="850" alt="daily-stonks-clean Banner">
+</p>
+<!-- repo-convergence:readme-header:end -->
 
 [![tests](https://github.com/whisprer/daily-stonks-clean/actions/workflows/tests.yml/badge.svg)](https://github.com/whisprer/daily-stonks-clean/actions/workflows/tests.yml)
 
